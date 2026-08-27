@@ -167,6 +167,7 @@
     <!-- Main Content Body -->
     <main class="flex-grow">
         @yield('content')
+        {{ $slot ?? '' }}
     </main>
 
     <!-- Footer -->

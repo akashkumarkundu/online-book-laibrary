@@ -6,11 +6,11 @@ use App\Models\Author;
 use App\Models\Book;
 use App\Models\GradeLevel;
 use App\Models\Subject;
-use Illuminate\Http\Request;
+use Illuminate\Contracts\View\View;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         $featuredBooks = Book::with(['gradeLevel', 'subject', 'author'])
             ->where('is_featured', true)
@@ -23,7 +23,7 @@ class HomeController extends Controller
         $authors = Author::take(6)->get();
 
         $totalBooksCount = Book::count();
-        $totalReadersCount = Book::sum('reader_count');
+        $totalReadersCount = (int) Book::sum('reader_count');
 
         return view('pages.home', compact(
             'featuredBooks',

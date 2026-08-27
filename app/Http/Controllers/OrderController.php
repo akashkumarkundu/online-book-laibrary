@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
-use Illuminate\Http\Request;
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         if (Auth::check()) {
             $orders = Order::where('user_id', Auth::id())->with('items')->latest()->get();
@@ -19,8 +19,9 @@ class OrderController extends Controller
         return view('pages.orders.index', compact('orders'));
     }
 
-    public function show($id)
+    public function show(int|string $id): View
     {
+        /** @var Order $order */
         $order = Order::with('items.book')->findOrFail($id);
 
         return view('pages.orders.show', compact('order'));

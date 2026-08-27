@@ -3,16 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         return view('pages.contact');
     }
 
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
         $request->validate([
             'name' => 'required|string|max:255',

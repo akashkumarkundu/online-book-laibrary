@@ -42,8 +42,8 @@ class BookSeeder extends Seeder
                 'price' => 120, 'discount_price' => 100, 'isbn' => 'NCTB-C1-BAN-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
                     ['chapter_number' => 1, 'title' => 'অধ্যায় ১: স্বরবর্ণ পাঠ (অ - ঔ)', 'content' => 'অ-তে অজগর, আ-তে আম, ই-তে ইঁদুর ছানা, ঈ-তে ঈগল পাখি।'],
-                    ['chapter_number' => 2, 'title' => 'অধ্যায় ২: ব্যঞ্জনবর্ণ পাঠ (ক - ঙ)', 'content' => 'ক-তে কলা, খ-তে খাতা, গ-তে গরু, ঘ-তে ঘাস।']
-                ]
+                    ['chapter_number' => 2, 'title' => 'অধ্যায় ২: ব্যঞ্জনবর্ণ পাঠ (ক - ঙ)', 'content' => 'ক-তে কলা, খ-তে খাতা, গ-তে গরু, ঘ-তে ঘাস।'],
+                ],
             ],
             [
                 'grade' => 'class_1', 'subject_id' => $englishSub->id, 'author_id' => $nctbAuthor->id,
@@ -52,8 +52,8 @@ class BookSeeder extends Seeder
                 'price' => 130, 'discount_price' => 110, 'isbn' => 'NCTB-C1-ENG-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
                     ['chapter_number' => 1, 'title' => 'Unit 1: Alphabet & Greetings', 'content' => 'A for Apple, B for Ball, C for Cat. Hello! Good morning.'],
-                    ['chapter_number' => 2, 'title' => 'Unit 2: Numbers & Shapes', 'content' => '1 One, 2 Two, 3 Three. Circle, Square, Triangle.']
-                ]
+                    ['chapter_number' => 2, 'title' => 'Unit 2: Numbers & Shapes', 'content' => '1 One, 2 Two, 3 Three. Circle, Square, Triangle.'],
+                ],
             ],
             [
                 'grade' => 'class_1', 'subject_id' => $mathSub->id, 'author_id' => $nctbAuthor->id,
@@ -61,8 +61,8 @@ class BookSeeder extends Seeder
                 'description' => 'প্রথম শ্রেণীর প্রাথমিক গণিত শিক্ষা ও ১-২০ সংখ্যা গণনা বই।',
                 'price' => 125, 'discount_price' => 105, 'isbn' => 'NCTB-C1-MAT-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: ১ থেকে ১০ গণনা', 'content' => '১ (এক), ২ (দুই), ৩ (তিন), ৪ (চার), ৫ (পাঁচ)।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: ১ থেকে ১০ গণনা', 'content' => '১ (এক), ২ (দুই), ৩ (তিন), ৪ (চার), ৫ (পাঁচ)।'],
+                ],
             ],
 
             // CLASS 2
@@ -72,8 +72,8 @@ class BookSeeder extends Seeder
                 'description' => 'দ্বিতীয় শ্রেণীর শিক্ষার্থীদের আমার বাংলা পাঠ্যবই।',
                 'price' => 140, 'discount_price' => 120, 'isbn' => 'NCTB-C2-BAN-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: আমাদের বাংলাদেশ', 'content' => 'আমাদের দেশের নাম বাংলাদেশ। সবুজ ঘাস ও রূপালী নদী।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: আমাদের বাংলাদেশ', 'content' => 'আমাদের দেশের নাম বাংলাদেশ। সবুজ ঘাস ও রূপালী নদী।'],
+                ],
             ],
             [
                 'grade' => 'class_2', 'subject_id' => $englishSub->id, 'author_id' => $nctbAuthor->id,
@@ -81,8 +81,8 @@ class BookSeeder extends Seeder
                 'description' => 'English for Today Class 2 standard curriculum.',
                 'price' => 145, 'discount_price' => 125, 'isbn' => 'NCTB-C2-ENG-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'Unit 1: Days of the Week', 'content' => 'Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday.']
-                ]
+                    ['chapter_number' => 1, 'title' => 'Unit 1: Days of the Week', 'content' => 'Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday.'],
+                ],
             ],
             [
                 'grade' => 'class_2', 'subject_id' => $mathSub->id, 'author_id' => $nctbAuthor->id,
@@ -90,8 +90,8 @@ class BookSeeder extends Seeder
                 'description' => 'দ্বিতীয় শ্রেণীর ২ অঙ্কের যোগ-বিয়োগ ও প্রারম্ভিক গণিত।',
                 'price' => 150, 'discount_price' => 130, 'isbn' => 'NCTB-C2-MAT-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: ২ অঙ্কের যোগ-বিয়োগ', 'content' => '১০ + ১৫ = ২৫, ৫০ - ২০ = ৩০।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: ২ অঙ্কের যোগ-বিয়োগ', 'content' => '১০ + ১৫ = ২৫, ৫০ - ২০ = ৩০।'],
+                ],
             ],
 
             // CLASS 3
@@ -101,8 +101,8 @@ class BookSeeder extends Seeder
                 'description' => 'তৃতীয় শ্রেণীর আমার বাংলা পাঠ্যবই।',
                 'price' => 160, 'discount_price' => 140, 'isbn' => 'NCTB-C3-BAN-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: রাজা ও তিন কন্যা', 'content' => 'এক দেশে ছিল এক প্রজা বৎসল রাজা ও তার তিন কন্যা।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: রাজা ও তিন কন্যা', 'content' => 'এক দেশে ছিল এক প্রজা বৎসল রাজা ও তার তিন কন্যা।'],
+                ],
             ],
             [
                 'grade' => 'class_3', 'subject_id' => $scienceSub->id, 'author_id' => $nctbAuthor->id,
@@ -110,8 +110,8 @@ class BookSeeder extends Seeder
                 'description' => 'তৃতীয় শ্রেণীর জীব ও জড় বস্তু সংক্রান্ত বিজ্ঞান বই।',
                 'price' => 155, 'discount_price' => 135, 'isbn' => 'NCTB-C3-SCI-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: আমাদের পরিবেশের জীব ও জড়', 'content' => 'যাদের প্রাণ আছে তারা জীব এবং যাদের প্রাণ নেই তারা জড়।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: আমাদের পরিবেশের জীব ও জড়', 'content' => 'যাদের প্রাণ আছে তারা জীব এবং যাদের প্রাণ নেই তারা জড়।'],
+                ],
             ],
 
             // CLASS 4
@@ -121,8 +121,8 @@ class BookSeeder extends Seeder
                 'description' => '৪র্থ শ্রেণীর গুণ, ভাগ ও স্থানীয় মান শিক্ষা বই।',
                 'price' => 170, 'discount_price' => 150, 'isbn' => 'NCTB-C4-MAT-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: বড় সংখ্যা ও স্থানীয় মান', 'content' => 'একক, দশক, শতক, হাজার, ওযুত, লক্ষ, নিযুত, কোটি।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: বড় সংখ্যা ও স্থানীয় মান', 'content' => 'একক, দশক, শতক, হাজার, ওযুত, লক্ষ, নিযুত, কোটি।'],
+                ],
             ],
 
             // CLASS 5 (PEC)
@@ -132,8 +132,8 @@ class BookSeeder extends Seeder
                 'description' => '৫ম শ্রেণীর খাদ্য শৃঙ্খল ও পরিবেশ বিজ্ঞান পাঠ্যবই।',
                 'price' => 180, 'discount_price' => 160, 'isbn' => 'NCTB-C5-SCI-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: আমাদের পরিবেশ ও খাদ্য শৃঙ্খল', 'content' => 'উদ্ভিদ সূর্যের আলো ব্যবহার করে সালোকসংশ্লেষণ প্রক্রিয়ায় খাদ্য তৈরি করে।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: আমাদের পরিবেশ ও খাদ্য শৃঙ্খল', 'content' => 'উদ্ভিদ সূর্যের আলো ব্যবহার করে সালোকসংশ্লেষণ প্রক্রিয়ায় খাদ্য তৈরি করে।'],
+                ],
             ],
 
             // CLASS 6
@@ -143,8 +143,8 @@ class BookSeeder extends Seeder
                 'description' => '৬ষ্ঠ শ্রেণীর স্বাভাবিক সংখ্যা, ভগ্নাংশ ও জ্যামিতি পাঠ্যবই।',
                 'price' => 200, 'discount_price' => 180, 'isbn' => 'NCTB-C6-MAT-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: স্বাভাবিক সংখ্যা ও ভগ্নাংশ', 'content' => 'মৌলিক ও যৌগিক সংখ্যা, লসাগু ও গসাগু নির্ণয়।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: স্বাভাবিক সংখ্যা ও ভগ্নাংশ', 'content' => 'মৌলিক ও যৌগিক সংখ্যা, লসাগু ও গসাগু নির্ণয়।'],
+                ],
             ],
             [
                 'grade' => 'class_6', 'subject_id' => $ictSub->id, 'author_id' => $nctbAuthor->id,
@@ -152,8 +152,8 @@ class BookSeeder extends Seeder
                 'description' => '৬ষ্ঠ শ্রেণীর কম্পিউটার পরিচিতি ও আইসিটি শিক্ষা।',
                 'price' => 160, 'discount_price' => 140, 'isbn' => 'NCTB-C6-ICT-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: তথ্য ও যোগাযোগ প্রযুক্তি পরিচিতি', 'content' => 'কম্পিউটার হার্ডওয়্যার, সফটওয়্যার ও ইন্টারনেটের ব্যবহার।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: তথ্য ও যোগাযোগ প্রযুক্তি পরিচিতি', 'content' => 'কম্পিউটার হার্ডওয়্যার, সফটওয়্যার ও ইন্টারনেটের ব্যবহার।'],
+                ],
             ],
 
             // CLASS 7
@@ -163,8 +163,8 @@ class BookSeeder extends Seeder
                 'description' => '৭ম শ্রেণীর অণুজীব ও রাসায়নিক বিজ্ঞান।',
                 'price' => 210, 'discount_price' => 190, 'isbn' => 'NCTB-C7-SCI-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: নিম্নশ্রেণীর জীব', 'content' => 'ভাইরাস, ব্যাকটেরিয়া, ছত্রাক ও শৈবালের গঠন।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: নিম্নশ্রেণীর জীব', 'content' => 'ভাইরাস, ব্যাকটেরিয়া, ছত্রাক ও শৈবালের গঠন।'],
+                ],
             ],
 
             // CLASS 8 (JSC)
@@ -174,8 +174,8 @@ class BookSeeder extends Seeder
                 'description' => '৮ম শ্রেণীর প্যাটার্ন, মুনাফা ও বীজগণিতীয় সূত্রাবলী।',
                 'price' => 230, 'discount_price' => 200, 'isbn' => 'NCTB-C8-MAT-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: প্যাটার্ন (Pattern)', 'content' => 'জ্যামিতিক ও সংখ্যা প্যাটার্ন গঠন।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: প্যাটার্ন (Pattern)', 'content' => 'জ্যামিতিক ও সংখ্যা প্যাটার্ন গঠন।'],
+                ],
             ],
             [
                 'grade' => 'class_8', 'subject_id' => $ictSub->id, 'author_id' => $nctbAuthor->id,
@@ -183,8 +183,8 @@ class BookSeeder extends Seeder
                 'description' => '৮ম শ্রেণীর নেটওয়ার্ক টপোলজি ও সাইবার সিকিউরিটি।',
                 'price' => 170, 'discount_price' => 150, 'isbn' => 'NCTB-C8-ICT-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: নেটওয়ার্ক ও টপোলজি', 'content' => 'Star, Bus, Ring ও Mesh টপোলজি বিশ্লেষণ।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: নেটওয়ার্ক ও টপোলজি', 'content' => 'Star, Bus, Ring ও Mesh টপোলজি বিশ্লেষণ।'],
+                ],
             ],
 
             // CLASS 9-10 (SSC)
@@ -195,8 +195,8 @@ class BookSeeder extends Seeder
                 'price' => 260, 'discount_price' => 230, 'isbn' => 'NCTB-SSC-PHY-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
                     ['chapter_number' => 1, 'title' => 'অধ্যায় ১: ভৌত রাশি ও পরিমাপ', 'content' => 'ভৌত রাশি, স্লাইড ক্যালিফার্স ও স্ক্রু গজ।'],
-                    ['chapter_number' => 2, 'title' => 'অধ্যায় ২: গতি (Motion)', 'content' => 'v = u + at, s = ut + 1/2at^2 গতির সমীকরণ।']
-                ]
+                    ['chapter_number' => 2, 'title' => 'অধ্যায় ২: গতি (Motion)', 'content' => 'v = u + at, s = ut + 1/2at^2 গতির সমীকরণ।'],
+                ],
             ],
             [
                 'grade' => 'class_10', 'subject_id' => $chemistrySub->id, 'author_id' => $nctbAuthor->id,
@@ -204,8 +204,8 @@ class BookSeeder extends Seeder
                 'description' => 'এসএসসি রসায়ন পর্যায় সারণি ও মোলের ধারণা।',
                 'price' => 250, 'discount_price' => 220, 'isbn' => 'NCTB-SSC-CHE-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ৩: পদার্থের গঠন', 'content' => 'বোর পরমাণু মডেল ও পর্যায় সারণি।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ৩: পদার্থের গঠন', 'content' => 'বোর পরমাণু মডেল ও পর্যায় সারণি।'],
+                ],
             ],
             [
                 'grade' => 'class_10', 'subject_id' => $biologySub->id, 'author_id' => $nctbAuthor->id,
@@ -213,8 +213,8 @@ class BookSeeder extends Seeder
                 'description' => 'এসএসসি জীববিজ্ঞান কোষ বিভাজন ও টিস্যু।',
                 'price' => 255, 'discount_price' => 225, 'isbn' => 'NCTB-SSC-BIO-2026', 'publisher' => 'NCTB Board',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ২: জীবকোষ ও টিস্যু', 'content' => 'মাইটোসিস ও মিওসিস কোষ বিভাজন।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ২: জীবকোষ ও টিস্যু', 'content' => 'মাইটোসিস ও মিওসিস কোষ বিভাজন।'],
+                ],
             ],
 
             // CLASS 11-12 (HSC)
@@ -224,8 +224,8 @@ class BookSeeder extends Seeder
                 'description' => 'প্রফেসর মো: হাজারী ও নাগ রচিত উচ্চমাধ্যমিক রসায়ন ১ম পত্র।',
                 'price' => 450, 'discount_price' => 390, 'isbn' => '978-984-34-1102-1', 'publisher' => 'হাসান বুক হাউস',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ২: গুণগত রসায়ন', 'content' => 'কোয়ান্টাম সংখ্যা, অর্বিটাল এবং দ্রাব্যতা গুণফল (Ksp)।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ২: গুণগত রসায়ন', 'content' => 'কোয়ান্টাম সংখ্যা, অর্বিটাল এবং দ্রাব্যতা গুণফল (Ksp)।'],
+                ],
             ],
             [
                 'grade' => 'class_11', 'subject_id' => $physicsSub->id, 'author_id' => $tapanAuthor->id,
@@ -233,8 +233,8 @@ class BookSeeder extends Seeder
                 'description' => 'ড. শাহজাহান তপন রচিত এইচএসসি পদার্থবিজ্ঞান ১ম পত্র।',
                 'price' => 480, 'discount_price' => 420, 'isbn' => '978-984-34-2201-4', 'publisher' => 'অক্ষরপত্র প্রকাশনী',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ২: ভেক্টর (Vector)', 'content' => 'সামান্তরিকের সূত্র, ডট গুণন ও ক্রস গুণন।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ২: ভেক্টর (Vector)', 'content' => 'সামান্তরিকের সূত্র, ডট গুণন ও ক্রস গুণন।'],
+                ],
             ],
             [
                 'grade' => 'class_11', 'subject_id' => $higherMathSub->id, 'author_id' => $ketabAuthor->id,
@@ -242,8 +242,8 @@ class BookSeeder extends Seeder
                 'description' => 'কেতাব উদ্দীন আহমেদ রচিত এইচএসসি উচ্চতর গণিত ১ম পত্র।',
                 'price' => 520, 'discount_price' => 460, 'isbn' => '978-984-34-3305-9', 'publisher' => 'সিস্টেক পাবলিকেশন্স',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: ম্যাট্রিক্স ও নির্ণায়ক', 'content' => 'ম্যাট্রিক্সের গুণন, ইনভার্স ম্যাট্রিক্স ও ক্রেমারের নিয়ম।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ১: ম্যাট্রিক্স ও নির্ণায়ক', 'content' => 'ম্যাট্রিক্সের গুণন, ইনভার্স ম্যাট্রিক্স ও ক্রেমারের নিয়ম।'],
+                ],
             ],
             [
                 'grade' => 'class_12', 'subject_id' => $ictSub->id, 'author_id' => $mujiburAuthor->id,
@@ -251,14 +251,16 @@ class BookSeeder extends Seeder
                 'description' => 'প্রকৌশলী মুজিবুর রহমান রচিত এইচএসসি তথ্য ও যোগাযোগ প্রযুক্তি।',
                 'price' => 380, 'discount_price' => 330, 'isbn' => '978-984-34-4408-2', 'publisher' => 'প্রকাশক পাবলিকেশন্স',
                 'chapters' => [
-                    ['chapter_number' => 1, 'title' => 'অধ্যায় ৩: সংখ্যা পদ্ধতি ও লজিক গেট', 'content' => 'বাইনারি, হেক্সাডেসিমেল ও লজিক গেট (NAND/NOR)।']
-                ]
+                    ['chapter_number' => 1, 'title' => 'অধ্যায় ৩: সংখ্যা পদ্ধতি ও লজিক গেট', 'content' => 'বাইনারি, হেক্সাডেসিমেল ও লজিক গেট (NAND/NOR)।'],
+                ],
             ],
         ];
 
         foreach ($booksList as $b) {
             $grade = GradeLevel::where('code', $b['grade'])->first();
-            if (!$grade) continue;
+            if (! $grade) {
+                continue;
+            }
 
             $book = Book::updateOrCreate(
                 ['title' => $b['title']],
@@ -282,16 +284,14 @@ class BookSeeder extends Seeder
                 ]
             );
 
-            if (isset($b['chapters'])) {
-                foreach ($b['chapters'] as $chap) {
-                    Chapter::updateOrCreate(
-                        ['book_id' => $book->id, 'chapter_number' => $chap['chapter_number']],
-                        [
-                            'title' => $chap['title'],
-                            'content' => $chap['content'],
-                        ]
-                    );
-                }
+            foreach ($b['chapters'] as $chap) {
+                Chapter::updateOrCreate(
+                    ['book_id' => $book->id, 'chapter_number' => $chap['chapter_number']],
+                    [
+                        'title' => $chap['title'],
+                        'content' => $chap['content'],
+                    ]
+                );
             }
         }
     }
