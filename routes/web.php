@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\BookController as AdminBookController;
+use App\Http\Controllers\Admin\ContactController as AdminContactController;
+use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
@@ -41,9 +45,33 @@ Route::get('/services', [ServiceController::class, 'index'])->name('services.ind
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
+// Admin Panel Routes
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/', [AdminDashboardController::class, 'index'])->name('dashboard');
+
+    // Admin Book Management
+    Route::get('/books', [AdminBookController::class, 'index'])->name('books.index');
+    Route::get('/books/create', [AdminBookController::class, 'create'])->name('books.create');
+    Route::post('/books', [AdminBookController::class, 'store'])->name('books.store');
+    Route::get('/books/{book}/edit', [AdminBookController::class, 'edit'])->name('books.edit');
+    Route::put('/books/{book}', [AdminBookController::class, 'update'])->name('books.update');
+    Route::delete('/books/{book}', [AdminBookController::class, 'destroy'])->name('books.destroy');
+
+    // Admin Order Management
+    Route::get('/orders', [AdminOrderController::class, 'index'])->name('orders.index');
+    Route::get('/orders/{order}', [AdminOrderController::class, 'show'])->name('orders.show');
+    Route::patch('/orders/{order}/status', [AdminOrderController::class, 'updateStatus'])->name('orders.update-status');
+
+    // Admin Contacts Management
+    Route::get('/contacts', [AdminContactController::class, 'index'])->name('contacts.index');
+    Route::patch('/contacts/{contact}/status', [AdminContactController::class, 'updateStatus'])->name('contacts.update-status');
+    Route::delete('/contacts/{contact}', [AdminContactController::class, 'destroy'])->name('contacts.destroy');
+});
+
 // Authentication Routes (from Laravel starter)
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });
 
 require __DIR__.'/settings.php';
+

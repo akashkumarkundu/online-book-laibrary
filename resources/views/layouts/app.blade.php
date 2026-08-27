@@ -120,6 +120,12 @@
                     <span>অর্ডারসমূহ</span>
                 </a>
 
+                <!-- Admin Panel Button -->
+                <a href="{{ route('admin.dashboard') }}" class="hidden sm:flex items-center gap-1.5 bg-emerald-950/80 hover:bg-emerald-900/90 text-emerald-300 border border-emerald-700/50 text-xs px-3 py-2 rounded-xl font-bold transition-colors shadow-sm">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                    <span>এডমিন</span>
+                </a>
+
                 <!-- Mobile Menu Button -->
                 <button onclick="toggleMobileMenu()" class="md:hidden bg-slate-900 p-2.5 rounded-xl text-slate-300 hover:text-white border border-slate-800">
                     <i data-lucide="menu" class="w-5 h-5"></i>
